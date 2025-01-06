@@ -1,0 +1,31 @@
+<div id="<%= dom_id user %>">
+  <strong>Profile:</strong>
+  <div>
+    
+    <% if user.profile.attached? %>
+      <%= image_tag user.profile, style: "width: 100px; height: 100px; border-radius: 50%; object-fit: cover;" %>
+    <% end %>
+  </div>
+  <p>
+
+    <strong>First name:</strong>
+    <%= user.first_name %>
+  </p>
+
+  <p>
+    <strong>Last name:</strong>
+    <%= user.last_name %>
+  </p>
+
+  <p>
+    <strong>Gender:</strong>
+    <%= user.gender %>
+  </p>
+
+  <p>
+    <strong>Country:</strong>
+    <%= user.country %>
+  </p>
+
+  
+</div>
